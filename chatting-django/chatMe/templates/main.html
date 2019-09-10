@@ -1,0 +1,442 @@
+
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+  <meta charset="utf-8">
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+  <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700,300' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet prefetch" href='https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css'>
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.2/css/font-awesome.min.css'>
+  <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css'%}">
+  <title></title>
+</head>
+<body>
+  <div id="frame">
+  	<div id="sidepanel">
+  		<div id="profile">
+  			<div class="wrap">
+  				<img id="profile-img" src="{{ current_user.profile_image.image }}" class="online" alt="" />
+  				<p>{{ current_user.username }}</p>
+  				<!-- <i class="fa fa-chevron-down expand-button" aria-hidden="true"></i>
+  				<div id="status-options">
+  					<ul>
+  						<li id="status-online" class="active"><span class="status-circle"></span> <p>Online</p></li>
+  						<li id="status-away"><span class="status-circle"></span> <p>Away</p></li>
+  						<li id="status-busy"><span class="status-circle"></span> <p>Busy</p></li>
+  						<li id="status-offline"><span class="status-circle"></span> <p>Offline</p></li>
+  					</ul>
+  				</div>
+  				<div id="expanded">
+  					<label for="twitter"><i class="fa fa-facebook fa-fw" aria-hidden="true"></i></label>
+  					<input name="twitter" type="text" value="mikeross" />
+  					<label for="twitter"><i class="fa fa-twitter fa-fw" aria-hidden="true"></i></label>
+  					<input name="twitter" type="text" value="ross81" />
+  					<label for="twitter"><i class="fa fa-instagram fa-fw" aria-hidden="true"></i></label>
+  					<input name="twitter" type="text" value="mike.ross" />
+  				</div> -->
+  			</div>
+  		</div>
+  		<!-- <div id="search">
+  			<label for=""><i class="fa fa-search" aria-hidden="true"></i></label>
+  			<input type="text" placeholder="Search contacts..." />
+  		</div> -->
+  		<div id="contacts">
+  			<ul>
+					<!-- <li class="contact" id="server" onclick="get_chat(this)">
+  					<div class="wrap">
+  						<span class="contact-status"></span>
+  						<img src="{{ all_users_chat_set.0.profile_image.image }}" alt="" />
+  						<div class="meta">
+  							<p id="profile_name" class="name">{{ all_users_chat_set.0.username }}</p>
+  							<p class="preview">{{ all_users_chat_set.1 }}</p>
+  						</div>
+  					</div>
+  				</li> -->
+
+					<!-- {% for chat in chats_set %}
+  				<li class="contact" id="{{chat.0.id}}" onclick="get_chat(this)">
+  					<div class="wrap">
+  						<span class="contact-status"></span>
+  						<img src="{{ chat.0.profile_image.image }}" alt="" />
+  						<div class="meta">
+  							<p id="profile_name" class="name">{{ chat.0.username }}</p>
+  							<p class="preview">
+									{{ chat.1 }}</p>
+  						</div>
+  					</div>
+  				</li>
+					{% endfor %} -->
+
+					<!-- {% for chat in groups_chats_set %}
+  				<li class="contact" id="G{{chat.0.id}}" onclick="get_chat(this)">
+  					<div class="wrap">
+  						<span class="contact-status"></span>
+  						<img src="{{ chat.0.image }}" alt="" />
+  						<div class="meta">
+  							<p id="profile_name" class="name">Grup: {{ chat.0.name }}</p>
+								<p class="preview">{{ chat.0.name }} grubuna mesaj göndermek için tıkla</p>
+  						</div>
+  					</div>
+  				</li>
+					{% endfor %} -->
+
+					{% for userr in other_users %}
+  				<li class="contact" id="{{userr.id}}" onclick="get_chat(this)">
+  					<div class="wrap">
+  						<span class="contact-status"></span>
+  						<img src="{{ userr.profile_image.image }}" alt="" />
+  						<div class="meta">
+  							<p id="profile_name" class="name">{{ userr.username }}</p>
+								<p class="preview">{{ userr.username }}'a mesaj göndermek için tıkla</p>
+  						</div>
+  					</div>
+  				</li>
+					{% endfor %}
+
+  			</ul>
+  		</div>
+  		<div id="bottom-bar">
+  			<button id="joingroup"><span>Join group</span></button>
+  			<button id="creategroup"><span>Create group</span></button>
+  		</div>
+  	</div>
+  	<div class="content" id="content">
+  	</div>
+  </div>
+
+
+
+  <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.js"></script>
+  <script>
+
+  var TOKEN = '{{ token }}';
+	var socket_url = $(location).attr("href").replace('8000', '5000');
+	var socket = io.connect(socket_url, {query: 'user_id={{current_user.id}}&token=' + TOKEN});
+
+
+  // $("#profile-img").on('click', function() {
+  // 	$("#status-options").toggleClass("active");
+  // });
+
+  // $(".expand-button").on('click', function() {
+  //   $("#profile").toggleClass("expanded");
+  // 	$("#contacts").toggleClass("expanded");
+  // });
+
+	function get_chat(contact_li){
+		var id = $(contact_li).attr('id');
+		$(contact_li).find('.contact-status').removeClass('busy');
+    $.ajax({
+        type : "GET",
+        url : "/api/chat/?id=" + id,
+				beforeSend: function(request) {
+    			request.setRequestHeader("Authorization", "Token " + TOKEN);
+  			},
+        success: function(answer){
+					show_chat(answer, id, $(contact_li));
+        },
+        error: function(XMLHttpRequest, textStatus, errorThrown) {
+          alert("some error " + String(errorThrown) + String(textStatus) + String(XMLHttpRequest.responseText));
+      }
+  	});
+	}
+
+	function show_chat(chat, user_name, contact_element){
+		var list_elements = $('#contacts ul li');
+		list_elements.each(function(idx, li){
+			$(li).removeClass('active');
+		});
+		contact_element.addClass('active');
+		var profile_image_src = contact_element.find("img").attr("src");
+		var contact_id = contact_element.attr('id');
+		var profile_name = contact_element.find("#profile_name").text();
+		var html = `<div class="contact-profile">
+			<img src="` + profile_image_src +`" alt="" />
+			<p>` + profile_name +`</p>
+		</div>
+		<div class="messages">
+			<ul id="messages_list">
+			</ul>
+		</div>
+		<div class="message-input">
+			<div class="wrap">
+			<input type="text" placeholder="Write your message..." />
+			<i class="fa fa-paperclip attachment" aria-hidden="true"></i>
+			<button class="submit"><i class="fa fa-paper-plane" aria-hidden="true"></i></button>
+			</div>
+		</div>`;
+		$('#content').html(html);
+		for (var i = 0; i < chat.length; i++) {
+			if (chat[i]['sender'] != {{current_user.id}}) {
+				insert_received_message(chat[i]);
+			} else {
+				insert_sent_message(chat[i]);
+			}
+		}
+		if (chat.length != 0) {
+			insert_last_message(chat[chat.length-1], $(contact_element));
+		}
+
+		$(".messages").animate({ scrollTop: $(".messages").prop('scrollHeight') }, "fast");
+	}
+
+	function insert_sent_message(message){
+		var html = `<li class="sent">
+			<img src="`+ message['sender_url'] +`" alt="" />
+			<p>` + message['content'] +`</p>
+		</li>`;
+		$('#messages_list').append(html);
+	}
+
+	function insert_received_message(message){
+		var html = `<li class="replies">
+			<img src="`+ message['sender_url'] +`" alt="" />
+			<p>` + message['content'] +`</p>
+		</li>`;
+		$('#messages_list').append(html);
+	}
+
+	function insert_last_message(message, contact_element){
+		if (message['sender'] != {{ current_user.id }}) {
+			var profile_name = contact_element.find("#profile_name").text();
+			$(contact_element).find('.preview').html('<span>'+ profile_name +': </span>' + message['content']);
+		} else {
+			$(contact_element).find('.preview').html('<span>You: </span>' + message['content']);
+		}
+	}
+
+  $("#status-options ul li").click(function() {
+  	$("#profile-img").removeClass();
+  	$("#status-online").removeClass("active");
+  	$("#status-away").removeClass("active");
+  	$("#status-busy").removeClass("active");
+  	$("#status-offline").removeClass("active");
+  	$(this).addClass("active");
+
+  	if($("#status-online").hasClass("active")) {
+  		$("#profile-img").addClass("online");
+  	} else if ($("#status-away").hasClass("active")) {
+  		$("#profile-img").addClass("away");
+  	} else if ($("#status-busy").hasClass("active")) {
+  		$("#profile-img").addClass("busy");
+  	} else if ($("#status-offline").hasClass("active")) {
+  		$("#profile-img").addClass("offline");
+  	} else {
+  		$("#profile-img").removeClass();
+  	};
+
+  	$("#status-options").removeClass("active");
+  });
+
+  function newMessage() {
+		var contact = $('#contacts').find('ul .active')[0];
+		if (contact !== undefined) {
+			var contact_id = $(contact).attr('id');
+	  	message = $(".message-input input").val();
+
+			if($.trim(message) == '') {
+	  		return;
+	  	}
+
+	  	$('.message-input input').val(null);
+			var content = null;
+			if (contact_id == 'server') {
+				content = {
+					content: message,
+					type: 'A'
+				}
+			} else if (contact_id[0] == 'G') {
+				content = {
+					content: message,
+					group: contact_id.substring(1),
+					type: 'G'
+				}
+			}	else {
+				content = {
+					content: message,
+					receiver: contact_id,
+					type: 'S'
+				}
+			}
+			socket.emit('new-message', content);
+		}
+  }
+
+  $('.submit').click(function() {
+    newMessage();
+  });
+
+  $(window).on('keydown', function(e) {
+    if (e.which == 13) {
+      newMessage();
+      return false;
+    }
+  });
+
+	$(function() {
+		if ($('#contacts').find('ul li')[0] !== undefined) {
+			get_chat($('#contacts').find('ul li')[0]);
+		}
+	});
+
+	socket.on('add-message', function(content) {
+		console.log(content)
+		if (content['type'] == 'S' ) {
+			var contact = $('#contacts').find('ul .active')[0];
+			if (contact !== undefined) {
+				var contact_element = $(contact);
+				if (contact_element.attr('id') == content['sender']) {
+					insert_received_message(content);
+				} else if (contact_element.attr('id') == content['receiver']) {
+					insert_sent_message(content);
+				}
+			}
+			var list_elements = $('#contacts ul li');
+			list_elements.each(function(idx, li){
+				if ($(li).attr('id') == content['sender'] || $(li).attr('id') == content['receiver'] )
+				{
+					if (content['sender'] != {{ current_user.id }}) {
+						$(li).find('.contact-status').addClass('busy');
+					}
+					insert_last_message(content, $(li));
+					if (idx != 0) {
+						var $this = $(li);
+        		var callback = function() {
+            	$this.insertBefore($this.siblings(':eq(0)'));
+        		};
+	    			$this.slideUp(300, callback).slideDown(300);
+					}
+				}
+			});
+		} else if (content['type'] == 'G') {
+			var group_contact = $('#contacts').find('ul .active')[0];
+			if (group_contact !== undefined) {
+				var contact_element = $(group_contact);
+				if (contact_element.attr('id').substring(1) == content['group']) {
+					if ( {{ current_user.id }} == content['sender']) {
+						insert_sent_message(content);
+					} else {
+						insert_received_message(content);
+					}
+				}
+			}
+			var list_elements = $('#contacts ul li');
+			list_elements.each(function(idx, li){
+				if ($(li).attr('id').substring(1) == content['group'])
+				{
+					if (content['sender'] != {{ current_user.id }}) {
+						$(li).find('.contact-status').addClass('busy');
+					}
+					insert_last_message(content, $(li));
+					if (idx != 0) {
+						var $this = $(li);
+        		var callback = function() {
+            	$this.insertBefore($this.siblings(':eq(0)'));
+        		};
+	    			$this.slideUp(300, callback).slideDown(300);
+					}
+				}
+			});
+		} else if (content['type'] == 'A') {
+			var current_contact = $('#contacts').find('ul .active')[0];
+			if (current_contact !== undefined) {
+				var contact_element = $(current_contact);
+				if (contact_element.attr('id') == 'server') {
+					if ( {{ current_user.id }} == content['sender']) {
+						insert_sent_message(content);
+					} else {
+						insert_received_message(content);
+					}
+				}
+			}
+			var list_elements = $('#contacts ul li');
+			list_elements.each(function(idx, li){
+				if ($(li).attr('id') == 'server')
+				{
+					insert_last_message(content, $(li));
+					if (content['sender'] != {{ current_user.id }}) {
+						$(li).find('.contact-status').addClass('busy');
+					}
+					if (idx != 0) {
+						var $this = $(li);
+        		var callback = function() {
+            	$this.insertBefore($this.siblings(':eq(0)'));
+        		};
+	    			$this.slideUp(300, callback).slideDown(300);
+					}
+				}
+			});
+		}
+
+		$(".messages").animate({ scrollTop: $(".messages").prop('scrollHeight') }, "fast");
+
+  });
+
+	socket.on('refresh-connected-users', (users) => {
+		var list_elements = $('#contacts ul li');
+		list_elements.each(function(idx, li){
+			if (users.includes($(li).attr('id'))) {
+				$(li).find('.contact-status').addClass('online');
+			} else {
+				$(li).find('.contact-status').removeClass('online');
+			}
+		});
+	});
+
+
+	$(".messages").animate({ scrollTop: $(".messages").prop('scrollHeight') }, "fast");
+
+	$("#creategroup").on( 'click', () => {
+		var group_name = prompt("Grubun ismini giriniz",  "{{ current_user.username }}" + " grubu");
+    $.ajax({
+        type : "GET",
+        url : "/api/create-group/?name=" + group_name,
+				beforeSend: function(request) {
+    			request.setRequestHeader("Authorization", "Token " + TOKEN);
+  			},
+        success: function(answer){
+					if (answer['created']) {
+						alert('Grup oluşturulmuştur.')
+						location = location
+					} else {
+						alert('Grup oluşturulamamıştur. Grubun ismini değştirmeyi deneyiniz.')
+					}
+        },
+        error: function(XMLHttpRequest, textStatus, errorThrown) {
+          alert("some error " + String(errorThrown) + String(textStatus) + String(XMLHttpRequest.responseText));
+      }
+  	});
+	});
+
+	$("#joingroup").on('click', () => {
+		var group_name = prompt("Grubun ismini giriniz",  '');
+    $.ajax({
+        type : "GET",
+        url : "/api/join-group/?name=" + group_name,
+				beforeSend: function(request) {
+    			request.setRequestHeader("Authorization", "Token " + TOKEN);
+  			},
+        success: function(answer){
+					console.log(answer)
+					if (answer['joined']) {
+						alert('Gruba katılımınız sağlanmıştır.')
+						location = location
+					} else {
+						alert('Gruba katılımınız sağlanamamıştır. Grubun ismini kontrol ediniz.')
+					}
+        },
+        error: function(XMLHttpRequest, textStatus, errorThrown) {
+          alert("some error " + String(errorThrown) + String(textStatus) + String(XMLHttpRequest.responseText));
+      }
+  	});
+	});
+  </script>
+</body>
+</html>

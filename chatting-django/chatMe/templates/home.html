@@ -1,0 +1,187 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MeetMe</title>
+	<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="{% static 'css/home.css'%}">
+</head>
+<body>
+	<div class="container-fluid h-100">
+		<div class="row window_row">
+			<div class="col-lg-3 col-md-3 col-xl-3 chat">
+				<div class="card mb-sm-3 mb-md-0 contacts_card">
+					<div class="card-header">
+						<div class="input-group">
+							<input type="text" placeholder="Search..." name="" class="form-control search">
+							<div class="input-group-prepend">
+								<span class="input-group-text search_btn"><i class="fas fa-search"></i></span>
+							</div>
+						</div>
+					</div>
+					<div class="card-body contacts_body">
+						<ui class="contacts" id="contacts">
+							{% for caller in callers_set %}
+							<li id="{{caller.0.id}}" onclick="set_contact(this)">
+								<div class="d-flex bd-highlight">
+									<div class="img_cont">
+										<img src="{{ caller.0.profile_image.image }}" class="rounded-circle user_img">
+										<span class="online_icon offline"></span>
+									</div>
+									<div class="user_info">
+										<span id="profile_name">{{ caller.0.username }}</span>
+										<p>Last call on {{caller.1.date}}</p>
+									</div>
+								</div>
+							</li>
+							{% endfor %}
+
+
+							{% for group in groups_calls_set %}
+							<li id="G{{group.0.id}}" onclick="set_contact(this)">
+								<div class="d-flex bd-highlight">
+									<div class="img_cont">
+										<img src="{{ group.0.image }}" class="rounded-circle user_img">
+									</div>
+									<div class="user_info">
+										<span id="profile_name">{{ caller.0.name }}</span>
+										<p>Last call on {{caller.1.date}}</p>
+									</div>
+								</div>
+							</li>
+							{% endfor %}
+
+
+							{% for userr in users %}
+							<li id="{{userr.id}}" onclick="set_contact(this)">
+								<div class="d-flex bd-highlight">
+									<div class="img_cont">
+										<img src="{{ userr.profile_image.image }}" class="rounded-circle user_img">
+										<span class="online_icon offline"></span>
+									</div>
+									<div class="user_info">
+										<span id="profile_name">{{ userr.username }}</span>
+									</div>
+								</div>
+							</li>
+							{% endfor %}
+
+						</ui>
+					</div>
+					<div class="card-footer"></div>
+				</div>
+			</div>
+			<div class="col-lg-8 col-md-8 col-xl-8 chat">
+				<div id="caller_pane" class="card">
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="video_pop" class="overlay">
+		<div class="popup">
+			<a class="close" href="#">&times;</a>
+			<div class="content">
+				<p>Video araması yapmak istiyor musunuz?</p>
+				<button onclick="location.href = '#calling_pop';startVideoCall(); " class="btn btn-success">
+					Evet, ara
+				</button>
+				<button onclick="location.href = '#';" class="btn btn-success">
+					Hayır
+				</button>
+			</div>
+		</div>
+	</div>
+
+	<div id="audio_pop" class="overlay">
+		<div class="popup">
+			<a class="close" href="#">&times;</a>
+			<div class="content">
+				<p>Ses araması yapmak istiyor musunuz?</p>
+				<button onclick="location.href = '#calling_pop';startAudioCall(); " class="btn btn-success">
+					Evet, ara
+				</button>
+				<button onclick="location.href = '#';" class="btn btn-success">
+					Hayır
+				</button>
+			</div>
+		</div>
+	</div>
+<canvas id="preview"></canvas>
+	<div id="calling_pop" class="overlay">
+		<div class="popup">
+			<a class="close" href="#">&times;</a>
+			<div class="content">
+				<p>Aranıyor, Lütfen bekleyiniz...</p>
+			</div>
+		</div>
+	</div>
+
+	<div id="video_call" class="overlay">
+		<a class="close" onclick="toggleRecording()" style="padding:20px; color:white; font-size:70px;" href="#">&times;</a>
+		<div class="row">
+				<img id="out" style="top: 2; width:480px;height:360px;" src="" alt="">
+		</div>
+		<video src="" id="video" style="width:40vw;height:32vh;" autoplay playsinline></video>
+	</div>
+<canvas id="preview" hidden="true"></canvas>
+	<div id="audio_call" class="overlay">
+		<a class="close" onclick="toggleRecording()" style="padding:20px; color:white; font-size:70px;" href="#">&times;</a>
+		<div class="container">
+			<div class="row">
+				<div class="offset-4 col-4">
+					<img src="" style="height: inherit; width:inherit; margin-top:20vh;" class="rounded-circle user_img_msg">
+					<button class="btn btn-danger" style="height: inherit; width:inherit; margin-top:20vh;font-size:40px;" type="button" name="button">Bitir</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="call_rejected" class="overlay">
+		<div class="popup">
+			<a class="close" href="#">&times;</a>
+			<div class="content">
+				<p>Aradığınız kişiye ulaşılamamıştır.</p>
+			</div>
+		</div>
+	</div>
+
+	<div id="coming_call" class="overlay">
+		<div class="popup">
+			<a class="close" href="#">&times;</a>
+			<div class="content">
+				<img src="" class="rounded-circle user_img_msg">
+				<p></p>
+				<button id="accept_button" class="btn btn-success">
+					Evet
+				</button>
+				<button id="reject_button" class="btn btn-success">
+					Hayır
+				</button>
+			</div>
+		</div>
+	</div>
+
+	<script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.js"></script>
+	<script>
+	var TOKEN = '{{ token }}';
+	var CURRENT_USER = {{current_user.id}};
+	var WORKER_PATH = '{% static "js/call/recorderjs/recorderWorker.js" %}';
+	var socket_url = $(location).attr("href").replace('8000', '5000');
+	var socket = io.connect(socket_url, {query: 'user_id={{current_user.id}}&token=' + TOKEN});
+	</script>
+	<script type="text/javascript" src="{% static 'js/home.js' %}"></script>
+	<script id="worker1" type="javascript/worker"></script>
+	<script src="{% static 'js/call/recorderJs/recorder.js' %}"></script>
+	<script src="{% static 'js/call/recorderJs/recorderWorker.js' %}"></script>
+	<script src="{% static 'js/call/main.js' %}"></script>
+	<script src="{% static 'js/call/client.js' %}"></script>
+
+</body>
+</html>

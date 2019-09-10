@@ -1,0 +1,3411 @@
+[
+{
+  "model": "auth.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$120000$K61zlc3SduPB$hsfl7hvdNcjuAZXulDNs0KJmc5fEEEPURxY9hZfuC8o=",
+    "last_login": "2019-04-06T19:56:45.499Z",
+    "is_superuser": true,
+    "username": "alisafaya",
+    "first_name": "",
+    "last_name": "",
+    "email": "alisafaya@gmail.com",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2019-04-02T20:02:40.744Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 4,
+  "fields": {
+    "password": "pbkdf2_sha256$120000$lQuLt7GJGByN$SUuwyOIvLLitjUyGR7bES0wIRpLGLgkXP/ezW/kniF8=",
+    "last_login": "2019-04-07T19:24:07.641Z",
+    "is_superuser": false,
+    "username": "hilal",
+    "first_name": "",
+    "last_name": "",
+    "email": "hilalaksoy@mail.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2019-04-04T02:30:27.216Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 7,
+  "fields": {
+    "password": "pbkdf2_sha256$120000$4WFU8NqGfX0x$bArxzCwY5GUQOWXIo2IZ39SRRBiUhv6Aah5WAQ8lvAA=",
+    "last_login": "2019-04-07T07:13:43.645Z",
+    "is_superuser": false,
+    "username": "ayse",
+    "first_name": "",
+    "last_name": "",
+    "email": "ayse@mail.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2019-04-05T19:02:37.929Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 9,
+  "fields": {
+    "password": "pbkdf2_sha256$120000$kZky82d4W6Rt$jZB9epeu5ST1xJMUkdnRplt2bQcuG4myKOuaPB5uG10=",
+    "last_login": "2019-04-05T23:53:44.040Z",
+    "is_superuser": false,
+    "username": "ahmet",
+    "first_name": "",
+    "last_name": "",
+    "email": "ahmet@mail.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2019-04-05T23:53:39.248Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 17,
+  "fields": {
+    "password": "pbkdf2_sha256$120000$pRVHb97qI2Ja$tIBsiryI7kKId3h1fdPvPBNvd8sWHMp0Gs5Z1bsl3mg=",
+    "last_login": "2019-04-06T12:18:26.891Z",
+    "is_superuser": false,
+    "username": "user",
+    "first_name": "",
+    "last_name": "",
+    "email": "aas@sd.sdopk",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2019-04-06T12:18:21.683Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 18,
+  "fields": {
+    "password": "",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "ChatMe",
+    "first_name": "",
+    "last_name": "",
+    "email": "chat@me.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2019-04-06T12:18:21.864Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 19,
+  "fields": {
+    "password": "pbkdf2_sha256$120000$9znkE559PoNc$VLyuOn5Myd4U7fdAp5ohqj+1w7zQ83mIY2xrwOSM7+Y=",
+    "last_login": "2019-04-06T19:28:01.083Z",
+    "is_superuser": false,
+    "username": "chatting_node",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2019-04-06T12:29:42.101Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 20,
+  "fields": {
+    "password": "pbkdf2_sha256$120000$HnkEL5qVnUSu$tqXREiPlXguRhDlZbbKv8SVtn1tx9zYGfOA9WAUk0uc=",
+    "last_login": "2019-04-07T09:51:34.275Z",
+    "is_superuser": false,
+    "username": "alaa",
+    "first_name": "",
+    "last_name": "",
+    "email": "alaa@gmial.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2019-04-07T09:51:30.668Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "24c80we41z0nkvamsb6fcko2y07ra0pi",
+  "fields": {
+    "session_data": "ZmE3NWJiMmQxMTJkNjczNGJmNGRkMTk5MDc4MzgxOTgwODkxMDczMTp7Il9hdXRoX3VzZXJfaWQiOiIyMCIsIl9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIiwiX2F1dGhfdXNlcl9oYXNoIjoiN2FjYWMxMzZiYTdjZmRlNWY1NzZjZjY4MDcwOTQ3MDUyNWVmZjJlMyJ9",
+    "expire_date": "2019-04-21T09:51:34.277Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "2airqdwoxpkrxgw18v19dsyklxkwmfpo",
+  "fields": {
+    "session_data": "MzEwMDdhODJkNTE4YmFmZTkwYzljYmVlNDFlOTg4YzI0YTJmNmUwYjp7Il9hdXRoX3VzZXJfaWQiOiI0IiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiJiZDVjNDNhMTYxYWUyYmMxNDk4MDk4MDM0ZTczNWNlZDJlMWEzYzM2In0=",
+    "expire_date": "2019-04-19T19:22:26.110Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "bwyeoz9ml45zj0oj708chqzlc8zt1mg5",
+  "fields": {
+    "session_data": "ODQ2ZmEzYWMxMDAwZjNlNGFjYjEzYWE1MzYzYWQ1N2M0ODFmOGEwMjp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiJiODFhZGM5NGVkNmMyOWE1ZDMwNjAwZjczODUzYjU3ZDZiMDM1YzI0In0=",
+    "expire_date": "2019-04-20T19:56:45.505Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "n9c3clb6m3yzsjb7t1pfd4m8uhyhbs2s",
+  "fields": {
+    "session_data": "MzEwMDdhODJkNTE4YmFmZTkwYzljYmVlNDFlOTg4YzI0YTJmNmUwYjp7Il9hdXRoX3VzZXJfaWQiOiI0IiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiJiZDVjNDNhMTYxYWUyYmMxNDk4MDk4MDM0ZTczNWNlZDJlMWEzYzM2In0=",
+    "expire_date": "2019-04-21T19:24:07.646Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "rkugr6pbon9lqllyx4rq4ycwy9pv0al2",
+  "fields": {
+    "session_data": "MzEwMDdhODJkNTE4YmFmZTkwYzljYmVlNDFlOTg4YzI0YTJmNmUwYjp7Il9hdXRoX3VzZXJfaWQiOiI0IiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiJiZDVjNDNhMTYxYWUyYmMxNDk4MDk4MDM0ZTczNWNlZDJlMWEzYzM2In0=",
+    "expire_date": "2019-04-18T03:17:52.056Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "xykdpgtp3z57vlkyj5b9o254925quhuv",
+  "fields": {
+    "session_data": "YjA4ODM4NmFkZjE1NTNjN2RiNWIwNzVhMDhjN2QwOWIyYzQ1Y2VjNjp7Il9hdXRoX3VzZXJfaWQiOiI3IiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiJmZDEzZGQxN2QyYjE5MzkzMDBhZGE3Y2YyNjc3YmFkMmZhMDc4MzYxIn0=",
+    "expire_date": "2019-04-21T07:13:43.648Z"
+  }
+},
+{
+  "model": "authtoken.token",
+  "pk": "06184ddba5d84448fa365c7b8bff677d1ea6bdb6",
+  "fields": {
+    "user": [
+      "ayse"
+    ],
+    "created": "2019-04-07T07:13:43.676Z"
+  }
+},
+{
+  "model": "authtoken.token",
+  "pk": "080c3269dc8e2f55c143dd52f5523a2644149445",
+  "fields": {
+    "user": [
+      "user"
+    ],
+    "created": "2019-04-06T12:18:26.988Z"
+  }
+},
+{
+  "model": "authtoken.token",
+  "pk": "84d239bda858b3b15c0e2c42b5fbf0294f97e08c",
+  "fields": {
+    "user": [
+      "alaa"
+    ],
+    "created": "2019-04-07T09:51:34.345Z"
+  }
+},
+{
+  "model": "authtoken.token",
+  "pk": "879925b6db26216526ab31559266d9f1fbf527f0",
+  "fields": {
+    "user": [
+      "ahmet"
+    ],
+    "created": "2019-04-05T23:53:44.152Z"
+  }
+},
+{
+  "model": "authtoken.token",
+  "pk": "94f06843277a32c2bb278d4c5cbe8c8f781075db",
+  "fields": {
+    "user": [
+      "hilal"
+    ],
+    "created": "2019-04-05T21:20:06.441Z"
+  }
+},
+{
+  "model": "authtoken.token",
+  "pk": "c0b1086ac7ebc4cb642cab15bdfb0488e8b64802",
+  "fields": {
+    "user": [
+      "alisafaya"
+    ],
+    "created": "2019-04-05T20:24:08.268Z"
+  }
+},
+{
+  "model": "authtoken.token",
+  "pk": "da2a5503f0d254eb58c22f0e165d655a192fb12d",
+  "fields": {
+    "user": [
+      "chatting_node"
+    ],
+    "created": "2019-04-06T19:28:01.137Z"
+  }
+},
+{
+  "model": "chatMe.userprofileimage",
+  "pk": 2,
+  "fields": {
+    "user": [
+      "hilal"
+    ],
+    "image": "http://emilcarlsson.se/assets/charlesforstman.png"
+  }
+},
+{
+  "model": "chatMe.userprofileimage",
+  "pk": 3,
+  "fields": {
+    "user": [
+      "ayse"
+    ],
+    "image": "http://emilcarlsson.se/assets/jonathansidwell.png"
+  }
+},
+{
+  "model": "chatMe.userprofileimage",
+  "pk": 5,
+  "fields": {
+    "user": [
+      "alisafaya"
+    ],
+    "image": "http://emilcarlsson.se/assets/mikeross.png"
+  }
+},
+{
+  "model": "chatMe.userprofileimage",
+  "pk": 6,
+  "fields": {
+    "user": [
+      "ahmet"
+    ],
+    "image": "https://www.gravatar.com/avatar/e54dbe0cfe5c44f2e67b7e425a144b6e?d=identicon&s=50"
+  }
+},
+{
+  "model": "chatMe.userprofileimage",
+  "pk": 12,
+  "fields": {
+    "user": [
+      "user"
+    ],
+    "image": "https://www.gravatar.com/avatar/3fc72b2094afc38e8cdeab5eacfb5193?d=identicon&s=50"
+  }
+},
+{
+  "model": "chatMe.userprofileimage",
+  "pk": 13,
+  "fields": {
+    "user": [
+      "ChatMe"
+    ],
+    "image": "https://www.gravatar.com/avatar/e5f7a93df14d0f9462db0a44b35a253c?d=identicon&s=50"
+  }
+},
+{
+  "model": "chatMe.userprofileimage",
+  "pk": 14,
+  "fields": {
+    "user": [
+      "alaa"
+    ],
+    "image": "https://www.gravatar.com/avatar/1544f67d0bccb2aaa9cbdd78edf819bb?d=identicon&s=50"
+  }
+},
+{
+  "model": "chatMe.group",
+  "pk": 1,
+  "fields": {
+    "name": "test group",
+    "create_date": "2019-04-07T01:08:14.705Z",
+    "admin": [
+      "alisafaya"
+    ],
+    "image": "https://www.gravatar.com/avatar/188ffc2ff66ba13a8e8094d086846647?d=identicon&s=50",
+    "users": [
+      [
+        "alisafaya"
+      ],
+      [
+        "hilal"
+      ],
+      [
+        "ayse"
+      ],
+      [
+        "ahmet"
+      ]
+    ]
+  }
+},
+{
+  "model": "chatMe.group",
+  "pk": 2,
+  "fields": {
+    "name": "some other group",
+    "create_date": "2019-04-07T07:34:44.257Z",
+    "admin": [
+      "hilal"
+    ],
+    "image": "https://www.gravatar.com/avatar/9a8230e073e366066c5a0ca8a1807fe2?d=identicon&s=50",
+    "users": [
+      [
+        "hilal"
+      ],
+      [
+        "ayse"
+      ],
+      [
+        "ahmet"
+      ]
+    ]
+  }
+},
+{
+  "model": "chatMe.message",
+  "pk": 1,
+  "fields": {
+    "sender": [
+      "alisafaya"
+    ],
+    "receiver": [
+      "hilal"
+    ],
+    "group": null,
+    "type": "S",
+    "content": "Merhaba from django",
+    "date": "2019-04-05T18:38:52.308Z",
+    "media": null,
+    "has_been_read": false
+  }
+},
+{
+  "model": "chatMe.message",
+  "pk": 2,
+  "fields": {
+    "sender": [
+      "hilal"
+    ],
+    "receiver": [
+      "alisafaya"
+    ],
+    "group": null,
+    "type": "S",
+    "content": "Merhaba ben hilal",
+    "date": "2019-04-05T21:32:04.933Z",
+    "media": null,
+    "has_been_read": false
+  }
+},
+{
+  "model": "chatMe.message",
+  "pk": 3,
+  "fields": {
+    "sender": [
+      "ayse"
+    ],
+    "receiver": [
+      "alisafaya"
+    ],
+    "group": null,
+    "type": "S",
+    "content": "ben ayseyim",
+    "date": "2019-04-05T21:33:54.369Z",
+    "media": null,
+    "has_been_read": false
+  }
+},
+{
+  "model": "chatMe.message",
+  "pk": 4,
+  "fields": {
+    "sender": [
+      "ahmet"
+    ],
+    "receiver": [
+      "alisafaya"
+    ],
+    "group": null,
+    "type": "S",
+    "content": "ben ahmetim",
+    "date": "2019-04-05T23:55:46.940Z",
+    "media": null,
+    "has_been_read": false
+  }
+},
+{
+  "model": "chatMe.message",
+  "pk": 5,
+  "fields": {
+    "sender": [
+      "alisafaya"
+    ],
+    "receiver": [
+      "hilal"
+    ],
+    "group": null,
+    "type": "S",
+    "content": "some message",
+    "date": "2019-04-06T11:56:00.635Z",
+    "media": null,
+    "has_been_read": false
+  }
+},
+{
+  "model": "chatMe.message",
+  "pk": 16,
+  "fields": {
+    "sender": [
+      "hilal"
+    ],
+    "receiver": [
+      "alisafaya"
+    ],
+    "group": null,
+    "type": "S",
+    "content": "new message from postman",
+    "date": "2019-04-06T19:59:10.056Z",
+    "media": null,
+    "has_been_read": false
+  }
+},
+{
+  "model": "chatMe.message",
+  "pk": 17,
+  "fields": {
+    "sender": [
+      "alisafaya"
+    ],
+    "receiver": [
+      "hilal"
+    ],
+    "group": null,
+    "type": "S",
+    "content": "asd",
+    "date": "2019-04-06T23:19:02.098Z",
+    "media": null,
+    "has_been_read": false
+  }
+},
+{
+  "model": "chatMe.message",
+  "pk": 18,
+  "fields": {
+    "sender": [
+      "alisafaya"
+    ],
+    "receiver": [
+      "hilal"
+    ],
+    "group": null,
+    "type": "S",
+    "content": "merhaba hilal",
+    "date": "2019-04-06T23:20:58.829Z",
+    "media": null,
+    "has_been_read": false
+  }
+},
+{
+  "model": "chatMe.message",
+  "pk": 19,
+  "fields": {
+    "sender": [
+      "alisafaya"
+    ],
+    "receiver": [
+      "hilal"
+    ],
+    "group": null,
+    "type": "S",
+    "content": "merhaba hilal",
+    "date": "2019-04-06T23:21:08.673Z",
+    "media": null,
+    "has_been_read": false
+  }
+},
+{
+  "model": "chatMe.message",
+  "pk": 20,
+  "fields": {
+    "sender": [
+      "alisafaya"
+    ],
+    "receiver": [
+      "hilal"
+    ],
+    "group": null,
+    "type": "S",
+    "content": "nasilsin",
+    "date": "2019-04-06T23:21:30.860Z",
+    "media": null,
+    "has_been_read": false
+  }
+},
+{
+  "model": "chatMe.message",
+  "pk": 21,
+  "fields": {
+    "sender": [
+      "alisafaya"
+    ],
+    "receiver": [
+      "hilal"
+    ],
+    "group": null,
+    "type": "S",
+    "content": "merhaba",
+    "date": "2019-04-06T23:22:27.344Z",
+    "media": null,
+    "has_been_read": false
+  }
+},
+{
+  "model": "chatMe.message",
+  "pk": 22,
+  "fields": {
+    "sender": [
+      "alisafaya"
+    ],
+    "receiver": [
+      "hilal"
+    ],
+    "group": null,
+    "type": "S",
+    "content": "merhbaa",
+    "date": "2019-04-06T23:23:08.977Z",
+    "media": null,
+    "has_been_read": false
+  }
+},
+{
+  "model": "chatMe.message",
+  "pk": 23,
+  "fields": {
+    "sender": [
+      "hilal"
+    ],
+    "receiver": [
+      "alisafaya"
+    ],
+    "group": null,
+    "type": "S",
+    "content": "nasilsniz",
+    "date": "2019-04-06T23:23:14.455Z",
+    "media": null,
+    "has_been_read": false
+  }
+},
+{
+  "model": "chatMe.message",
+  "pk": 24,
+  "fields": {
+    "sender": [
+      "hilal"
+    ],
+    "receiver": [
+      "alisafaya"
+    ],
+    "group": null,
+    "type": "S",
+    "content": "merahab",
+    "date": "2019-04-06T23:24:03.683Z",
+    "media": null,
+    "has_been_read": false
+  }
+},
+{
+  "model": "chatMe.message",
+  "pk": 25,
+  "fields": {
+    "sender": [
+      "hilal"
+    ],
+    "receiver": [
+      "alisafaya"
+    ],
+    "group": null,
+    "type": "S",
+    "content": "asasd",
+    "date": "2019-04-06T23:24:10.017Z",
+    "media": null,
+    "has_been_read": false
+  }
+},
+{
+  "model": "chatMe.message",
+  "pk": 26,
+  "fields": {
+    "sender": [
+      "hilal"
+    ],
+    "receiver": [
+      "alisafaya"
+    ],
+    "group": null,
+    "type": "S",
+    "content": "nasilsiniz",
+    "date": "2019-04-06T23:24:25.660Z",
+    "media": null,
+    "has_been_read": false
+  }
+},
+{
+  "model": "chatMe.message",
+  "pk": 27,
+  "fields": {
+    "sender": [
+      "alisafaya"
+    ],
+    "receiver": [
+      "hilal"
+    ],
+    "group": null,
+    "type": "S",
+    "content": "merhaba",
+    "date": "2019-04-06T23:26:34.122Z",
+    "media": null,
+    "has_been_read": false
+  }
+},
+{
+  "model": "chatMe.message",
+  "pk": 28,
+  "fields": {
+    "sender": [
+      "alisafaya"
+    ],
+    "receiver": [
+      "hilal"
+    ],
+    "group": null,
+    "type": "S",
+    "content": "merhaba",
+    "date": "2019-04-06T23:27:22.352Z",
+    "media": null,
+    "has_been_read": false
+  }
+},
+{
+  "model": "chatMe.message",
+  "pk": 29,
+  "fields": {
+    "sender": [
+      "alisafaya"
+    ],
+    "receiver": [
+      "hilal"
+    ],
+    "group": null,
+    "type": "S",
+    "content": "merhaba",
+    "date": "2019-04-06T23:34:29.706Z",
+    "media": null,
+    "has_been_read": false
+  }
+},
+{
+  "model": "chatMe.message",
+  "pk": 30,
+  "fields": {
+    "sender": [
+      "alisafaya"
+    ],
+    "receiver": [
+      "hilal"
+    ],
+    "group": null,
+    "type": "S",
+    "content": "merhaba",
+    "date": "2019-04-06T23:35:42.685Z",
+    "media": null,
+    "has_been_read": false
+  }
+},
+{
+  "model": "chatMe.message",
+  "pk": 31,
+  "fields": {
+    "sender": [
+      "alisafaya"
+    ],
+    "receiver": [
+      "hilal"
+    ],
+    "group": null,
+    "type": "S",
+    "content": "nasilsin",
+    "date": "2019-04-06T23:35:52.345Z",
+    "media": null,
+    "has_been_read": false
+  }
+},
+{
+  "model": "chatMe.message",
+  "pk": 32,
+  "fields": {
+    "sender": [
+      "alisafaya"
+    ],
+    "receiver": [
+      "hilal"
+    ],
+    "group": null,
+    "type": "S",
+    "content": "nasil",
+    "date": "2019-04-06T23:36:17.464Z",
+    "media": null,
+    "has_been_read": false
+  }
+},
+{
+  "model": "chatMe.message",
+  "pk": 33,
+  "fields": {
+    "sender": [
+      "alisafaya"
+    ],
+    "receiver": [
+      "hilal"
+    ],
+    "group": null,
+    "type": "S",
+    "content": "asd",
+    "date": "2019-04-06T23:37:40.928Z",
+    "media": null,
+    "has_been_read": false
+  }
+},
+{
+  "model": "chatMe.message",
+  "pk": 34,
+  "fields": {
+    "sender": [
+      "alisafaya"
+    ],
+    "receiver": [
+      "hilal"
+    ],
+    "group": null,
+    "type": "S",
+    "content": "asdas",
+    "date": "2019-04-06T23:38:16.964Z",
+    "media": null,
+    "has_been_read": false
+  }
+},
+{
+  "model": "chatMe.message",
+  "pk": 35,
+  "fields": {
+    "sender": [
+      "alisafaya"
+    ],
+    "receiver": [
+      "hilal"
+    ],
+    "group": null,
+    "type": "S",
+    "content": "merhaba",
+    "date": "2019-04-06T23:39:10.990Z",
+    "media": null,
+    "has_been_read": false
+  }
+},
+{
+  "model": "chatMe.message",
+  "pk": 36,
+  "fields": {
+    "sender": [
+      "alisafaya"
+    ],
+    "receiver": [
+      "hilal"
+    ],
+    "group": null,
+    "type": "S",
+    "content": "nasilsiniz",
+    "date": "2019-04-06T23:39:13.826Z",
+    "media": null,
+    "has_been_read": false
+  }
+},
+{
+  "model": "chatMe.message",
+  "pk": 37,
+  "fields": {
+    "sender": [
+      "hilal"
+    ],
+    "receiver": [
+      "alisafaya"
+    ],
+    "group": null,
+    "type": "S",
+    "content": "iyiyim siz nasilsiniz",
+    "date": "2019-04-06T23:39:24.238Z",
+    "media": null,
+    "has_been_read": false
+  }
+},
+{
+  "model": "chatMe.message",
+  "pk": 38,
+  "fields": {
+    "sender": [
+      "hilal"
+    ],
+    "receiver": [
+      "alisafaya"
+    ],
+    "group": null,
+    "type": "S",
+    "content": "niye cevap yok",
+    "date": "2019-04-06T23:39:38.899Z",
+    "media": null,
+    "has_been_read": false
+  }
+},
+{
+  "model": "chatMe.message",
+  "pk": 39,
+  "fields": {
+    "sender": [
+      "alisafaya"
+    ],
+    "receiver": [
+      "hilal"
+    ],
+    "group": null,
+    "type": "S",
+    "content": "ceva var",
+    "date": "2019-04-06T23:39:44.765Z",
+    "media": null,
+    "has_been_read": false
+  }
+},
+{
+  "model": "chatMe.message",
+  "pk": 40,
+  "fields": {
+    "sender": [
+      "hilal"
+    ],
+    "receiver": [
+      "alisafaya"
+    ],
+    "group": null,
+    "type": "S",
+    "content": "gonder",
+    "date": "2019-04-06T23:39:51.473Z",
+    "media": null,
+    "has_been_read": false
+  }
+},
+{
+  "model": "chatMe.message",
+  "pk": 41,
+  "fields": {
+    "sender": [
+      "alisafaya"
+    ],
+    "receiver": [
+      "hilal"
+    ],
+    "group": null,
+    "type": "S",
+    "content": "asdas",
+    "date": "2019-04-06T23:39:58.713Z",
+    "media": null,
+    "has_been_read": false
+  }
+},
+{
+  "model": "chatMe.message",
+  "pk": 42,
+  "fields": {
+    "sender": [
+      "alisafaya"
+    ],
+    "receiver": [
+      "hilal"
+    ],
+    "group": null,
+    "type": "S",
+    "content": "merhaba",
+    "date": "2019-04-06T23:50:46.570Z",
+    "media": null,
+    "has_been_read": false
+  }
+},
+{
+  "model": "chatMe.message",
+  "pk": 43,
+  "fields": {
+    "sender": [
+      "hilal"
+    ],
+    "receiver": [
+      "alisafaya"
+    ],
+    "group": null,
+    "type": "S",
+    "content": "merhaba",
+    "date": "2019-04-06T23:50:56.650Z",
+    "media": null,
+    "has_been_read": false
+  }
+},
+{
+  "model": "chatMe.message",
+  "pk": 44,
+  "fields": {
+    "sender": [
+      "alisafaya"
+    ],
+    "receiver": [
+      "hilal"
+    ],
+    "group": null,
+    "type": "S",
+    "content": "deneme",
+    "date": "2019-04-06T23:51:40.304Z",
+    "media": null,
+    "has_been_read": false
+  }
+},
+{
+  "model": "chatMe.message",
+  "pk": 45,
+  "fields": {
+    "sender": [
+      "alisafaya"
+    ],
+    "receiver": [
+      "hilal"
+    ],
+    "group": null,
+    "type": "S",
+    "content": "dene",
+    "date": "2019-04-06T23:51:44.956Z",
+    "media": null,
+    "has_been_read": false
+  }
+},
+{
+  "model": "chatMe.message",
+  "pk": 46,
+  "fields": {
+    "sender": [
+      "alisafaya"
+    ],
+    "receiver": [
+      "hilal"
+    ],
+    "group": null,
+    "type": "S",
+    "content": "asd",
+    "date": "2019-04-06T23:51:49.579Z",
+    "media": null,
+    "has_been_read": false
+  }
+},
+{
+  "model": "chatMe.message",
+  "pk": 47,
+  "fields": {
+    "sender": [
+      "alisafaya"
+    ],
+    "receiver": [
+      "hilal"
+    ],
+    "group": null,
+    "type": "S",
+    "content": "asd",
+    "date": "2019-04-06T23:51:49.978Z",
+    "media": null,
+    "has_been_read": false
+  }
+},
+{
+  "model": "chatMe.message",
+  "pk": 48,
+  "fields": {
+    "sender": [
+      "alisafaya"
+    ],
+    "receiver": [
+      "hilal"
+    ],
+    "group": null,
+    "type": "S",
+    "content": "asdasd",
+    "date": "2019-04-06T23:51:50.765Z",
+    "media": null,
+    "has_been_read": false
+  }
+},
+{
+  "model": "chatMe.message",
+  "pk": 49,
+  "fields": {
+    "sender": [
+      "alisafaya"
+    ],
+    "receiver": [
+      "hilal"
+    ],
+    "group": null,
+    "type": "S",
+    "content": "asd",
+    "date": "2019-04-06T23:51:51.188Z",
+    "media": null,
+    "has_been_read": false
+  }
+},
+{
+  "model": "chatMe.message",
+  "pk": 50,
+  "fields": {
+    "sender": [
+      "alisafaya"
+    ],
+    "receiver": [
+      "hilal"
+    ],
+    "group": null,
+    "type": "S",
+    "content": "asd",
+    "date": "2019-04-06T23:51:51.636Z",
+    "media": null,
+    "has_been_read": false
+  }
+},
+{
+  "model": "chatMe.message",
+  "pk": 51,
+  "fields": {
+    "sender": [
+      "alisafaya"
+    ],
+    "receiver": [
+      "hilal"
+    ],
+    "group": null,
+    "type": "S",
+    "content": "asd",
+    "date": "2019-04-06T23:51:52.060Z",
+    "media": null,
+    "has_been_read": false
+  }
+},
+{
+  "model": "chatMe.message",
+  "pk": 52,
+  "fields": {
+    "sender": [
+      "alisafaya"
+    ],
+    "receiver": [
+      "hilal"
+    ],
+    "group": null,
+    "type": "S",
+    "content": "asd",
+    "date": "2019-04-06T23:51:52.386Z",
+    "media": null,
+    "has_been_read": false
+  }
+},
+{
+  "model": "chatMe.message",
+  "pk": 53,
+  "fields": {
+    "sender": [
+      "alisafaya"
+    ],
+    "receiver": [
+      "hilal"
+    ],
+    "group": null,
+    "type": "S",
+    "content": "asd",
+    "date": "2019-04-06T23:51:52.778Z",
+    "media": null,
+    "has_been_read": false
+  }
+},
+{
+  "model": "chatMe.message",
+  "pk": 54,
+  "fields": {
+    "sender": [
+      "alisafaya"
+    ],
+    "receiver": [
+      "hilal"
+    ],
+    "group": null,
+    "type": "S",
+    "content": "asd",
+    "date": "2019-04-06T23:51:53.626Z",
+    "media": null,
+    "has_been_read": false
+  }
+},
+{
+  "model": "chatMe.message",
+  "pk": 55,
+  "fields": {
+    "sender": [
+      "alisafaya"
+    ],
+    "receiver": [
+      "hilal"
+    ],
+    "group": null,
+    "type": "S",
+    "content": "asd",
+    "date": "2019-04-06T23:51:54.047Z",
+    "media": null,
+    "has_been_read": false
+  }
+},
+{
+  "model": "chatMe.message",
+  "pk": 56,
+  "fields": {
+    "sender": [
+      "alisafaya"
+    ],
+    "receiver": [
+      "hilal"
+    ],
+    "group": null,
+    "type": "S",
+    "content": "asd",
+    "date": "2019-04-06T23:51:56.997Z",
+    "media": null,
+    "has_been_read": false
+  }
+},
+{
+  "model": "chatMe.message",
+  "pk": 57,
+  "fields": {
+    "sender": [
+      "alisafaya"
+    ],
+    "receiver": [
+      "hilal"
+    ],
+    "group": null,
+    "type": "S",
+    "content": "desad",
+    "date": "2019-04-06T23:52:48.288Z",
+    "media": null,
+    "has_been_read": false
+  }
+},
+{
+  "model": "chatMe.message",
+  "pk": 58,
+  "fields": {
+    "sender": [
+      "alisafaya"
+    ],
+    "receiver": [
+      "hilal"
+    ],
+    "group": null,
+    "type": "S",
+    "content": "merhaba",
+    "date": "2019-04-06T23:53:49.583Z",
+    "media": null,
+    "has_been_read": false
+  }
+},
+{
+  "model": "chatMe.message",
+  "pk": 59,
+  "fields": {
+    "sender": [
+      "alisafaya"
+    ],
+    "receiver": [
+      "hilal"
+    ],
+    "group": null,
+    "type": "S",
+    "content": "nasilsiniz",
+    "date": "2019-04-06T23:53:54.147Z",
+    "media": null,
+    "has_been_read": false
+  }
+},
+{
+  "model": "chatMe.message",
+  "pk": 60,
+  "fields": {
+    "sender": [
+      "alisafaya"
+    ],
+    "receiver": [
+      "hilal"
+    ],
+    "group": null,
+    "type": "S",
+    "content": "deneme",
+    "date": "2019-04-06T23:57:48.268Z",
+    "media": null,
+    "has_been_read": false
+  }
+},
+{
+  "model": "chatMe.message",
+  "pk": 61,
+  "fields": {
+    "sender": [
+      "alisafaya"
+    ],
+    "receiver": [
+      "hilal"
+    ],
+    "group": null,
+    "type": "S",
+    "content": "deneme",
+    "date": "2019-04-06T23:57:53.348Z",
+    "media": null,
+    "has_been_read": false
+  }
+},
+{
+  "model": "chatMe.message",
+  "pk": 62,
+  "fields": {
+    "sender": [
+      "alisafaya"
+    ],
+    "receiver": [
+      "hilal"
+    ],
+    "group": null,
+    "type": "S",
+    "content": "asd",
+    "date": "2019-04-06T23:58:33.015Z",
+    "media": null,
+    "has_been_read": false
+  }
+},
+{
+  "model": "chatMe.message",
+  "pk": 63,
+  "fields": {
+    "sender": [
+      "alisafaya"
+    ],
+    "receiver": [
+      "hilal"
+    ],
+    "group": null,
+    "type": "S",
+    "content": "asd",
+    "date": "2019-04-07T00:02:02.345Z",
+    "media": null,
+    "has_been_read": false
+  }
+},
+{
+  "model": "chatMe.message",
+  "pk": 64,
+  "fields": {
+    "sender": [
+      "alisafaya"
+    ],
+    "receiver": [
+      "hilal"
+    ],
+    "group": null,
+    "type": "S",
+    "content": "deneme",
+    "date": "2019-04-07T00:04:58.173Z",
+    "media": null,
+    "has_been_read": false
+  }
+},
+{
+  "model": "chatMe.message",
+  "pk": 65,
+  "fields": {
+    "sender": [
+      "alisafaya"
+    ],
+    "receiver": [
+      "ahmet"
+    ],
+    "group": null,
+    "type": "S",
+    "content": "asd",
+    "date": "2019-04-07T00:05:17.518Z",
+    "media": null,
+    "has_been_read": false
+  }
+},
+{
+  "model": "chatMe.message",
+  "pk": 66,
+  "fields": {
+    "sender": [
+      "alisafaya"
+    ],
+    "receiver": [
+      "hilal"
+    ],
+    "group": null,
+    "type": "S",
+    "content": "Merhaba",
+    "date": "2019-04-07T00:07:06.437Z",
+    "media": null,
+    "has_been_read": false
+  }
+},
+{
+  "model": "chatMe.message",
+  "pk": 67,
+  "fields": {
+    "sender": [
+      "alisafaya"
+    ],
+    "receiver": [
+      "ahmet"
+    ],
+    "group": null,
+    "type": "S",
+    "content": "asd",
+    "date": "2019-04-07T00:08:11.897Z",
+    "media": null,
+    "has_been_read": false
+  }
+},
+{
+  "model": "chatMe.message",
+  "pk": 68,
+  "fields": {
+    "sender": [
+      "alisafaya"
+    ],
+    "receiver": [
+      "ahmet"
+    ],
+    "group": null,
+    "type": "S",
+    "content": "qweqw",
+    "date": "2019-04-07T00:08:15.058Z",
+    "media": null,
+    "has_been_read": false
+  }
+},
+{
+  "model": "chatMe.message",
+  "pk": 69,
+  "fields": {
+    "sender": [
+      "alisafaya"
+    ],
+    "receiver": [
+      "ayse"
+    ],
+    "group": null,
+    "type": "S",
+    "content": "qwe",
+    "date": "2019-04-07T00:08:19.677Z",
+    "media": null,
+    "has_been_read": false
+  }
+},
+{
+  "model": "chatMe.message",
+  "pk": 70,
+  "fields": {
+    "sender": [
+      "alisafaya"
+    ],
+    "receiver": [
+      "hilal"
+    ],
+    "group": null,
+    "type": "S",
+    "content": "asdas",
+    "date": "2019-04-07T00:08:40.199Z",
+    "media": null,
+    "has_been_read": false
+  }
+},
+{
+  "model": "chatMe.message",
+  "pk": 71,
+  "fields": {
+    "sender": [
+      "alisafaya"
+    ],
+    "receiver": [
+      "hilal"
+    ],
+    "group": null,
+    "type": "S",
+    "content": "qwe",
+    "date": "2019-04-07T00:08:43.800Z",
+    "media": null,
+    "has_been_read": false
+  }
+},
+{
+  "model": "chatMe.message",
+  "pk": 72,
+  "fields": {
+    "sender": [
+      "alisafaya"
+    ],
+    "receiver": [
+      "ayse"
+    ],
+    "group": null,
+    "type": "S",
+    "content": "qwe",
+    "date": "2019-04-07T00:08:46.263Z",
+    "media": null,
+    "has_been_read": false
+  }
+},
+{
+  "model": "chatMe.message",
+  "pk": 73,
+  "fields": {
+    "sender": [
+      "alisafaya"
+    ],
+    "receiver": [
+      "hilal"
+    ],
+    "group": null,
+    "type": "S",
+    "content": "qwe",
+    "date": "2019-04-07T00:08:50.783Z",
+    "media": null,
+    "has_been_read": false
+  }
+},
+{
+  "model": "chatMe.message",
+  "pk": 74,
+  "fields": {
+    "sender": [
+      "alisafaya"
+    ],
+    "receiver": [
+      "ayse"
+    ],
+    "group": null,
+    "type": "S",
+    "content": "qwe",
+    "date": "2019-04-07T00:08:54.245Z",
+    "media": null,
+    "has_been_read": false
+  }
+},
+{
+  "model": "chatMe.message",
+  "pk": 75,
+  "fields": {
+    "sender": [
+      "alisafaya"
+    ],
+    "receiver": [
+      "ahmet"
+    ],
+    "group": null,
+    "type": "S",
+    "content": "qwe",
+    "date": "2019-04-07T00:08:56.726Z",
+    "media": null,
+    "has_been_read": false
+  }
+},
+{
+  "model": "chatMe.message",
+  "pk": 76,
+  "fields": {
+    "sender": [
+      "alisafaya"
+    ],
+    "receiver": [
+      "ayse"
+    ],
+    "group": null,
+    "type": "S",
+    "content": "qwe",
+    "date": "2019-04-07T00:09:33.440Z",
+    "media": null,
+    "has_been_read": false
+  }
+},
+{
+  "model": "chatMe.message",
+  "pk": 77,
+  "fields": {
+    "sender": [
+      "alisafaya"
+    ],
+    "receiver": [
+      "hilal"
+    ],
+    "group": null,
+    "type": "S",
+    "content": "wer",
+    "date": "2019-04-07T00:09:38.055Z",
+    "media": null,
+    "has_been_read": false
+  }
+},
+{
+  "model": "chatMe.message",
+  "pk": 78,
+  "fields": {
+    "sender": [
+      "alisafaya"
+    ],
+    "receiver": [
+      "ahmet"
+    ],
+    "group": null,
+    "type": "S",
+    "content": "qddfff",
+    "date": "2019-04-07T00:09:47.482Z",
+    "media": null,
+    "has_been_read": false
+  }
+},
+{
+  "model": "chatMe.message",
+  "pk": 79,
+  "fields": {
+    "sender": [
+      "alisafaya"
+    ],
+    "receiver": [
+      "hilal"
+    ],
+    "group": null,
+    "type": "S",
+    "content": "fff",
+    "date": "2019-04-07T00:09:51.864Z",
+    "media": null,
+    "has_been_read": false
+  }
+},
+{
+  "model": "chatMe.message",
+  "pk": 80,
+  "fields": {
+    "sender": [
+      "alisafaya"
+    ],
+    "receiver": [
+      "ayse"
+    ],
+    "group": null,
+    "type": "S",
+    "content": "ah",
+    "date": "2019-04-07T00:13:47.893Z",
+    "media": null,
+    "has_been_read": false
+  }
+},
+{
+  "model": "chatMe.message",
+  "pk": 81,
+  "fields": {
+    "sender": [
+      "alisafaya"
+    ],
+    "receiver": [
+      "ahmet"
+    ],
+    "group": null,
+    "type": "S",
+    "content": "asd",
+    "date": "2019-04-07T00:13:53.101Z",
+    "media": null,
+    "has_been_read": false
+  }
+},
+{
+  "model": "chatMe.message",
+  "pk": 82,
+  "fields": {
+    "sender": [
+      "alisafaya"
+    ],
+    "receiver": [
+      "ayse"
+    ],
+    "group": null,
+    "type": "S",
+    "content": "qwe",
+    "date": "2019-04-07T00:13:55.831Z",
+    "media": null,
+    "has_been_read": false
+  }
+},
+{
+  "model": "chatMe.message",
+  "pk": 83,
+  "fields": {
+    "sender": [
+      "alisafaya"
+    ],
+    "receiver": [
+      "hilal"
+    ],
+    "group": null,
+    "type": "S",
+    "content": "qwe",
+    "date": "2019-04-07T00:13:59.401Z",
+    "media": null,
+    "has_been_read": false
+  }
+},
+{
+  "model": "chatMe.message",
+  "pk": 84,
+  "fields": {
+    "sender": [
+      "alisafaya"
+    ],
+    "receiver": [
+      "ahmet"
+    ],
+    "group": null,
+    "type": "S",
+    "content": "asd",
+    "date": "2019-04-07T00:14:56.143Z",
+    "media": null,
+    "has_been_read": false
+  }
+},
+{
+  "model": "chatMe.message",
+  "pk": 85,
+  "fields": {
+    "sender": [
+      "alisafaya"
+    ],
+    "receiver": [
+      "hilal"
+    ],
+    "group": null,
+    "type": "S",
+    "content": "qwe",
+    "date": "2019-04-07T00:14:59.310Z",
+    "media": null,
+    "has_been_read": false
+  }
+},
+{
+  "model": "chatMe.message",
+  "pk": 86,
+  "fields": {
+    "sender": [
+      "alisafaya"
+    ],
+    "receiver": [
+      "ayse"
+    ],
+    "group": null,
+    "type": "S",
+    "content": "qwe",
+    "date": "2019-04-07T00:15:02.444Z",
+    "media": null,
+    "has_been_read": false
+  }
+},
+{
+  "model": "chatMe.message",
+  "pk": 87,
+  "fields": {
+    "sender": [
+      "alisafaya"
+    ],
+    "receiver": [
+      "ahmet"
+    ],
+    "group": null,
+    "type": "S",
+    "content": "merhbaa",
+    "date": "2019-04-07T00:15:36.204Z",
+    "media": null,
+    "has_been_read": false
+  }
+},
+{
+  "model": "chatMe.message",
+  "pk": 88,
+  "fields": {
+    "sender": [
+      "alisafaya"
+    ],
+    "receiver": [
+      "ayse"
+    ],
+    "group": null,
+    "type": "S",
+    "content": "asd",
+    "date": "2019-04-07T00:15:42.600Z",
+    "media": null,
+    "has_been_read": false
+  }
+},
+{
+  "model": "chatMe.message",
+  "pk": 89,
+  "fields": {
+    "sender": [
+      "alisafaya"
+    ],
+    "receiver": [
+      "ahmet"
+    ],
+    "group": null,
+    "type": "S",
+    "content": "asd",
+    "date": "2019-04-07T00:15:47.467Z",
+    "media": null,
+    "has_been_read": false
+  }
+},
+{
+  "model": "chatMe.message",
+  "pk": 90,
+  "fields": {
+    "sender": [
+      "alisafaya"
+    ],
+    "receiver": [
+      "hilal"
+    ],
+    "group": null,
+    "type": "S",
+    "content": "asd",
+    "date": "2019-04-07T00:19:57.554Z",
+    "media": null,
+    "has_been_read": false
+  }
+},
+{
+  "model": "chatMe.message",
+  "pk": 91,
+  "fields": {
+    "sender": [
+      "alisafaya"
+    ],
+    "receiver": [
+      "ayse"
+    ],
+    "group": null,
+    "type": "S",
+    "content": "asd",
+    "date": "2019-04-07T00:20:02.780Z",
+    "media": null,
+    "has_been_read": false
+  }
+},
+{
+  "model": "chatMe.message",
+  "pk": 92,
+  "fields": {
+    "sender": [
+      "alisafaya"
+    ],
+    "receiver": [
+      "ayse"
+    ],
+    "group": null,
+    "type": "S",
+    "content": "asd",
+    "date": "2019-04-07T00:20:24.181Z",
+    "media": null,
+    "has_been_read": false
+  }
+},
+{
+  "model": "chatMe.message",
+  "pk": 93,
+  "fields": {
+    "sender": [
+      "alisafaya"
+    ],
+    "receiver": [
+      "hilal"
+    ],
+    "group": null,
+    "type": "S",
+    "content": "asd",
+    "date": "2019-04-07T00:20:28.194Z",
+    "media": null,
+    "has_been_read": false
+  }
+},
+{
+  "model": "chatMe.message",
+  "pk": 94,
+  "fields": {
+    "sender": [
+      "alisafaya"
+    ],
+    "receiver": [
+      "ahmet"
+    ],
+    "group": null,
+    "type": "S",
+    "content": "asd",
+    "date": "2019-04-07T00:21:22.953Z",
+    "media": null,
+    "has_been_read": false
+  }
+},
+{
+  "model": "chatMe.message",
+  "pk": 95,
+  "fields": {
+    "sender": [
+      "alisafaya"
+    ],
+    "receiver": [
+      "hilal"
+    ],
+    "group": null,
+    "type": "S",
+    "content": "qwe",
+    "date": "2019-04-07T00:21:27.563Z",
+    "media": null,
+    "has_been_read": false
+  }
+},
+{
+  "model": "chatMe.message",
+  "pk": 96,
+  "fields": {
+    "sender": [
+      "alisafaya"
+    ],
+    "receiver": [
+      "hilal"
+    ],
+    "group": null,
+    "type": "S",
+    "content": "qwe",
+    "date": "2019-04-07T00:21:30.565Z",
+    "media": null,
+    "has_been_read": false
+  }
+},
+{
+  "model": "chatMe.message",
+  "pk": 97,
+  "fields": {
+    "sender": [
+      "alisafaya"
+    ],
+    "receiver": [
+      "user"
+    ],
+    "group": null,
+    "type": "S",
+    "content": "some message",
+    "date": "2019-04-07T02:40:53.982Z",
+    "media": null,
+    "has_been_read": false
+  }
+},
+{
+  "model": "chatMe.message",
+  "pk": 98,
+  "fields": {
+    "sender": [
+      "hilal"
+    ],
+    "receiver": [
+      "alisafaya"
+    ],
+    "group": null,
+    "type": "S",
+    "content": "merhaba",
+    "date": "2019-04-07T02:41:25.691Z",
+    "media": null,
+    "has_been_read": false
+  }
+},
+{
+  "model": "chatMe.message",
+  "pk": 99,
+  "fields": {
+    "sender": [
+      "alisafaya"
+    ],
+    "receiver": null,
+    "group": null,
+    "type": "A",
+    "content": "broadcast message",
+    "date": "2019-04-07T06:51:35.668Z",
+    "media": null,
+    "has_been_read": false
+  }
+},
+{
+  "model": "chatMe.message",
+  "pk": 100,
+  "fields": {
+    "sender": [
+      "hilal"
+    ],
+    "receiver": null,
+    "group": 1,
+    "type": "G",
+    "content": "Hi",
+    "date": "2019-04-07T07:03:36.297Z",
+    "media": null,
+    "has_been_read": false
+  }
+},
+{
+  "model": "chatMe.message",
+  "pk": 101,
+  "fields": {
+    "sender": [
+      "alisafaya"
+    ],
+    "receiver": null,
+    "group": null,
+    "type": "A",
+    "content": "broad",
+    "date": "2019-04-07T07:04:20.995Z",
+    "media": null,
+    "has_been_read": false
+  }
+},
+{
+  "model": "chatMe.message",
+  "pk": 102,
+  "fields": {
+    "sender": [
+      "alisafaya"
+    ],
+    "receiver": null,
+    "group": null,
+    "type": "A",
+    "content": "deneme",
+    "date": "2019-04-07T07:06:12.144Z",
+    "media": null,
+    "has_been_read": false
+  }
+},
+{
+  "model": "chatMe.message",
+  "pk": 103,
+  "fields": {
+    "sender": [
+      "alisafaya"
+    ],
+    "receiver": null,
+    "group": null,
+    "type": "A",
+    "content": "deneme",
+    "date": "2019-04-07T07:07:08.926Z",
+    "media": null,
+    "has_been_read": false
+  }
+},
+{
+  "model": "chatMe.message",
+  "pk": 104,
+  "fields": {
+    "sender": [
+      "alisafaya"
+    ],
+    "receiver": null,
+    "group": null,
+    "type": "A",
+    "content": "demeke",
+    "date": "2019-04-07T07:08:50.498Z",
+    "media": null,
+    "has_been_read": false
+  }
+},
+{
+  "model": "chatMe.message",
+  "pk": 105,
+  "fields": {
+    "sender": [
+      "alisafaya"
+    ],
+    "receiver": null,
+    "group": null,
+    "type": "A",
+    "content": "asdqe",
+    "date": "2019-04-07T07:10:16.051Z",
+    "media": null,
+    "has_been_read": false
+  }
+},
+{
+  "model": "chatMe.message",
+  "pk": 106,
+  "fields": {
+    "sender": [
+      "alisafaya"
+    ],
+    "receiver": null,
+    "group": null,
+    "type": "A",
+    "content": "stes",
+    "date": "2019-04-07T07:12:36.210Z",
+    "media": null,
+    "has_been_read": false
+  }
+},
+{
+  "model": "chatMe.message",
+  "pk": 107,
+  "fields": {
+    "sender": [
+      "alisafaya"
+    ],
+    "receiver": null,
+    "group": null,
+    "type": "A",
+    "content": "test",
+    "date": "2019-04-07T07:12:47.112Z",
+    "media": null,
+    "has_been_read": false
+  }
+},
+{
+  "model": "chatMe.message",
+  "pk": 108,
+  "fields": {
+    "sender": [
+      "alisafaya"
+    ],
+    "receiver": null,
+    "group": null,
+    "type": "A",
+    "content": "bir de",
+    "date": "2019-04-07T07:12:53.461Z",
+    "media": null,
+    "has_been_read": false
+  }
+},
+{
+  "model": "chatMe.message",
+  "pk": 109,
+  "fields": {
+    "sender": [
+      "hilal"
+    ],
+    "receiver": null,
+    "group": null,
+    "type": "A",
+    "content": "qwe",
+    "date": "2019-04-07T07:12:55.774Z",
+    "media": null,
+    "has_been_read": false
+  }
+},
+{
+  "model": "chatMe.message",
+  "pk": 110,
+  "fields": {
+    "sender": [
+      "hilal"
+    ],
+    "receiver": null,
+    "group": null,
+    "type": "A",
+    "content": "qwe",
+    "date": "2019-04-07T07:13:05.349Z",
+    "media": null,
+    "has_been_read": false
+  }
+},
+{
+  "model": "chatMe.message",
+  "pk": 111,
+  "fields": {
+    "sender": [
+      "alisafaya"
+    ],
+    "receiver": null,
+    "group": null,
+    "type": "A",
+    "content": "qwe",
+    "date": "2019-04-07T07:13:07.835Z",
+    "media": null,
+    "has_been_read": false
+  }
+},
+{
+  "model": "chatMe.message",
+  "pk": 112,
+  "fields": {
+    "sender": [
+      "hilal"
+    ],
+    "receiver": null,
+    "group": null,
+    "type": "A",
+    "content": "wer",
+    "date": "2019-04-07T07:13:10.052Z",
+    "media": null,
+    "has_been_read": false
+  }
+},
+{
+  "model": "chatMe.message",
+  "pk": 113,
+  "fields": {
+    "sender": [
+      "alisafaya"
+    ],
+    "receiver": null,
+    "group": null,
+    "type": "A",
+    "content": "merhbaa",
+    "date": "2019-04-07T07:13:13.190Z",
+    "media": null,
+    "has_been_read": false
+  }
+},
+{
+  "model": "chatMe.message",
+  "pk": 114,
+  "fields": {
+    "sender": [
+      "hilal"
+    ],
+    "receiver": null,
+    "group": null,
+    "type": "A",
+    "content": "merhbaa",
+    "date": "2019-04-07T07:13:17.397Z",
+    "media": null,
+    "has_been_read": false
+  }
+},
+{
+  "model": "chatMe.message",
+  "pk": 115,
+  "fields": {
+    "sender": [
+      "hilal"
+    ],
+    "receiver": null,
+    "group": null,
+    "type": "A",
+    "content": "nasilsiniz",
+    "date": "2019-04-07T07:14:00.682Z",
+    "media": null,
+    "has_been_read": false
+  }
+},
+{
+  "model": "chatMe.message",
+  "pk": 116,
+  "fields": {
+    "sender": [
+      "ayse"
+    ],
+    "receiver": null,
+    "group": null,
+    "type": "A",
+    "content": "iyiyiz",
+    "date": "2019-04-07T07:14:06.947Z",
+    "media": null,
+    "has_been_read": false
+  }
+},
+{
+  "model": "chatMe.message",
+  "pk": 117,
+  "fields": {
+    "sender": [
+      "alisafaya"
+    ],
+    "receiver": null,
+    "group": null,
+    "type": "A",
+    "content": "iyiizi",
+    "date": "2019-04-07T07:14:11.143Z",
+    "media": null,
+    "has_been_read": false
+  }
+},
+{
+  "model": "chatMe.message",
+  "pk": 118,
+  "fields": {
+    "sender": [
+      "alisafaya"
+    ],
+    "receiver": null,
+    "group": 1,
+    "type": "G",
+    "content": "merhbaa",
+    "date": "2019-04-07T07:49:44.140Z",
+    "media": null,
+    "has_been_read": false
+  }
+},
+{
+  "model": "chatMe.message",
+  "pk": 119,
+  "fields": {
+    "sender": [
+      "hilal"
+    ],
+    "receiver": null,
+    "group": 1,
+    "type": "G",
+    "content": "nasilsiniz",
+    "date": "2019-04-07T07:50:19.480Z",
+    "media": null,
+    "has_been_read": false
+  }
+},
+{
+  "model": "chatMe.message",
+  "pk": 120,
+  "fields": {
+    "sender": [
+      "alisafaya"
+    ],
+    "receiver": null,
+    "group": 1,
+    "type": "G",
+    "content": "merhbaa",
+    "date": "2019-04-07T07:52:46.856Z",
+    "media": null,
+    "has_been_read": false
+  }
+},
+{
+  "model": "chatMe.message",
+  "pk": 121,
+  "fields": {
+    "sender": [
+      "alisafaya"
+    ],
+    "receiver": null,
+    "group": 1,
+    "type": "G",
+    "content": "merhbaa",
+    "date": "2019-04-07T07:53:39.151Z",
+    "media": null,
+    "has_been_read": false
+  }
+},
+{
+  "model": "chatMe.message",
+  "pk": 122,
+  "fields": {
+    "sender": [
+      "alisafaya"
+    ],
+    "receiver": null,
+    "group": 1,
+    "type": "G",
+    "content": "merhaba",
+    "date": "2019-04-07T07:53:41.088Z",
+    "media": null,
+    "has_been_read": false
+  }
+},
+{
+  "model": "chatMe.message",
+  "pk": 123,
+  "fields": {
+    "sender": [
+      "alisafaya"
+    ],
+    "receiver": null,
+    "group": 1,
+    "type": "G",
+    "content": "test",
+    "date": "2019-04-07T07:53:49.216Z",
+    "media": null,
+    "has_been_read": false
+  }
+},
+{
+  "model": "chatMe.message",
+  "pk": 124,
+  "fields": {
+    "sender": [
+      "alisafaya"
+    ],
+    "receiver": null,
+    "group": 1,
+    "type": "G",
+    "content": "test",
+    "date": "2019-04-07T07:54:38.356Z",
+    "media": null,
+    "has_been_read": false
+  }
+},
+{
+  "model": "chatMe.message",
+  "pk": 125,
+  "fields": {
+    "sender": [
+      "hilal"
+    ],
+    "receiver": null,
+    "group": 1,
+    "type": "G",
+    "content": "merhaba",
+    "date": "2019-04-07T08:09:19.951Z",
+    "media": null,
+    "has_been_read": false
+  }
+},
+{
+  "model": "chatMe.message",
+  "pk": 126,
+  "fields": {
+    "sender": [
+      "alisafaya"
+    ],
+    "receiver": null,
+    "group": 1,
+    "type": "G",
+    "content": "nasil;sini",
+    "date": "2019-04-07T08:09:32.253Z",
+    "media": null,
+    "has_been_read": false
+  }
+},
+{
+  "model": "chatMe.message",
+  "pk": 127,
+  "fields": {
+    "sender": [
+      "alisafaya"
+    ],
+    "receiver": null,
+    "group": 1,
+    "type": "G",
+    "content": "iyi misiniz",
+    "date": "2019-04-07T08:09:42.358Z",
+    "media": null,
+    "has_been_read": false
+  }
+},
+{
+  "model": "chatMe.message",
+  "pk": 128,
+  "fields": {
+    "sender": [
+      "ayse"
+    ],
+    "receiver": null,
+    "group": 2,
+    "type": "G",
+    "content": "ozel grup",
+    "date": "2019-04-07T08:09:54.655Z",
+    "media": null,
+    "has_been_read": false
+  }
+},
+{
+  "model": "chatMe.message",
+  "pk": 129,
+  "fields": {
+    "sender": [
+      "hilal"
+    ],
+    "receiver": null,
+    "group": 2,
+    "type": "G",
+    "content": "naber",
+    "date": "2019-04-07T08:10:01.208Z",
+    "media": null,
+    "has_been_read": false
+  }
+},
+{
+  "model": "chatMe.message",
+  "pk": 130,
+  "fields": {
+    "sender": [
+      "alisafaya"
+    ],
+    "receiver": null,
+    "group": null,
+    "type": "A",
+    "content": "merhaba",
+    "date": "2019-04-07T08:13:07.708Z",
+    "media": null,
+    "has_been_read": false
+  }
+},
+{
+  "model": "chatMe.message",
+  "pk": 131,
+  "fields": {
+    "sender": [
+      "ayse"
+    ],
+    "receiver": [
+      "hilal"
+    ],
+    "group": null,
+    "type": "S",
+    "content": "merhaba",
+    "date": "2019-04-07T08:21:10.188Z",
+    "media": null,
+    "has_been_read": false
+  }
+},
+{
+  "model": "chatMe.message",
+  "pk": 132,
+  "fields": {
+    "sender": [
+      "hilal"
+    ],
+    "receiver": [
+      "ayse"
+    ],
+    "group": null,
+    "type": "S",
+    "content": "asd",
+    "date": "2019-04-07T08:21:29.032Z",
+    "media": null,
+    "has_been_read": false
+  }
+},
+{
+  "model": "chatMe.message",
+  "pk": 133,
+  "fields": {
+    "sender": [
+      "ayse"
+    ],
+    "receiver": [
+      "hilal"
+    ],
+    "group": null,
+    "type": "S",
+    "content": "nasilsiniz",
+    "date": "2019-04-07T08:21:38.753Z",
+    "media": null,
+    "has_been_read": false
+  }
+},
+{
+  "model": "chatMe.message",
+  "pk": 134,
+  "fields": {
+    "sender": [
+      "ayse"
+    ],
+    "receiver": [
+      "hilal"
+    ],
+    "group": null,
+    "type": "S",
+    "content": "merhaba",
+    "date": "2019-04-07T08:22:08.372Z",
+    "media": null,
+    "has_been_read": false
+  }
+},
+{
+  "model": "chatMe.message",
+  "pk": 135,
+  "fields": {
+    "sender": [
+      "hilal"
+    ],
+    "receiver": [
+      "ayse"
+    ],
+    "group": null,
+    "type": "S",
+    "content": "merhaba",
+    "date": "2019-04-07T08:22:12.309Z",
+    "media": null,
+    "has_been_read": false
+  }
+},
+{
+  "model": "chatMe.message",
+  "pk": 136,
+  "fields": {
+    "sender": [
+      "hilal"
+    ],
+    "receiver": [
+      "ayse"
+    ],
+    "group": null,
+    "type": "S",
+    "content": "nasilsni",
+    "date": "2019-04-07T08:22:19.861Z",
+    "media": null,
+    "has_been_read": false
+  }
+},
+{
+  "model": "chatMe.message",
+  "pk": 137,
+  "fields": {
+    "sender": [
+      "hilal"
+    ],
+    "receiver": [
+      "ayse"
+    ],
+    "group": null,
+    "type": "S",
+    "content": "asd",
+    "date": "2019-04-07T08:23:21.190Z",
+    "media": null,
+    "has_been_read": false
+  }
+},
+{
+  "model": "chatMe.message",
+  "pk": 138,
+  "fields": {
+    "sender": [
+      "hilal"
+    ],
+    "receiver": [
+      "alisafaya"
+    ],
+    "group": null,
+    "type": "S",
+    "content": "test",
+    "date": "2019-04-07T08:23:51.814Z",
+    "media": null,
+    "has_been_read": false
+  }
+},
+{
+  "model": "chatMe.message",
+  "pk": 139,
+  "fields": {
+    "sender": [
+      "alisafaya"
+    ],
+    "receiver": [
+      "hilal"
+    ],
+    "group": null,
+    "type": "S",
+    "content": "asd",
+    "date": "2019-04-07T08:24:25.589Z",
+    "media": null,
+    "has_been_read": false
+  }
+},
+{
+  "model": "chatMe.message",
+  "pk": 140,
+  "fields": {
+    "sender": [
+      "alisafaya"
+    ],
+    "receiver": null,
+    "group": 1,
+    "type": "G",
+    "content": "grup test",
+    "date": "2019-04-07T08:25:28.225Z",
+    "media": null,
+    "has_been_read": false
+  }
+},
+{
+  "model": "chatMe.message",
+  "pk": 141,
+  "fields": {
+    "sender": [
+      "alisafaya"
+    ],
+    "receiver": null,
+    "group": 1,
+    "type": "G",
+    "content": "asd",
+    "date": "2019-04-07T08:25:45.442Z",
+    "media": null,
+    "has_been_read": false
+  }
+},
+{
+  "model": "chatMe.message",
+  "pk": 142,
+  "fields": {
+    "sender": [
+      "hilal"
+    ],
+    "receiver": null,
+    "group": 1,
+    "type": "G",
+    "content": "as",
+    "date": "2019-04-07T08:27:15.324Z",
+    "media": null,
+    "has_been_read": false
+  }
+},
+{
+  "model": "chatMe.message",
+  "pk": 143,
+  "fields": {
+    "sender": [
+      "ayse"
+    ],
+    "receiver": [
+      "hilal"
+    ],
+    "group": null,
+    "type": "S",
+    "content": "message",
+    "date": "2019-04-07T08:28:51.602Z",
+    "media": null,
+    "has_been_read": false
+  }
+},
+{
+  "model": "chatMe.message",
+  "pk": 144,
+  "fields": {
+    "sender": [
+      "hilal"
+    ],
+    "receiver": [
+      "alisafaya"
+    ],
+    "group": null,
+    "type": "S",
+    "content": "asd",
+    "date": "2019-04-07T08:30:05.221Z",
+    "media": null,
+    "has_been_read": false
+  }
+},
+{
+  "model": "chatMe.message",
+  "pk": 145,
+  "fields": {
+    "sender": [
+      "hilal"
+    ],
+    "receiver": [
+      "alisafaya"
+    ],
+    "group": null,
+    "type": "S",
+    "content": "qwe",
+    "date": "2019-04-07T08:30:40.212Z",
+    "media": null,
+    "has_been_read": false
+  }
+},
+{
+  "model": "chatMe.message",
+  "pk": 146,
+  "fields": {
+    "sender": [
+      "hilal"
+    ],
+    "receiver": [
+      "alisafaya"
+    ],
+    "group": null,
+    "type": "S",
+    "content": "aqwe",
+    "date": "2019-04-07T08:30:55.722Z",
+    "media": null,
+    "has_been_read": false
+  }
+},
+{
+  "model": "chatMe.message",
+  "pk": 147,
+  "fields": {
+    "sender": [
+      "alisafaya"
+    ],
+    "receiver": [
+      "hilal"
+    ],
+    "group": null,
+    "type": "S",
+    "content": "asdqw",
+    "date": "2019-04-07T08:31:05.621Z",
+    "media": null,
+    "has_been_read": false
+  }
+},
+{
+  "model": "chatMe.message",
+  "pk": 148,
+  "fields": {
+    "sender": [
+      "hilal"
+    ],
+    "receiver": [
+      "alisafaya"
+    ],
+    "group": null,
+    "type": "S",
+    "content": "asd",
+    "date": "2019-04-07T08:31:10.124Z",
+    "media": null,
+    "has_been_read": false
+  }
+},
+{
+  "model": "chatMe.message",
+  "pk": 149,
+  "fields": {
+    "sender": [
+      "alisafaya"
+    ],
+    "receiver": null,
+    "group": 1,
+    "type": "G",
+    "content": "grup 1",
+    "date": "2019-04-07T08:32:19.910Z",
+    "media": null,
+    "has_been_read": false
+  }
+},
+{
+  "model": "chatMe.message",
+  "pk": 150,
+  "fields": {
+    "sender": [
+      "ayse"
+    ],
+    "receiver": null,
+    "group": 1,
+    "type": "G",
+    "content": "23",
+    "date": "2019-04-07T08:32:41.541Z",
+    "media": null,
+    "has_been_read": false
+  }
+},
+{
+  "model": "chatMe.message",
+  "pk": 151,
+  "fields": {
+    "sender": [
+      "ayse"
+    ],
+    "receiver": null,
+    "group": 2,
+    "type": "G",
+    "content": "234",
+    "date": "2019-04-07T08:32:49.688Z",
+    "media": null,
+    "has_been_read": false
+  }
+},
+{
+  "model": "chatMe.message",
+  "pk": 152,
+  "fields": {
+    "sender": [
+      "ayse"
+    ],
+    "receiver": null,
+    "group": null,
+    "type": "A",
+    "content": "wfw",
+    "date": "2019-04-07T08:32:58.391Z",
+    "media": null,
+    "has_been_read": false
+  }
+},
+{
+  "model": "chatMe.message",
+  "pk": 153,
+  "fields": {
+    "sender": [
+      "hilal"
+    ],
+    "receiver": null,
+    "group": null,
+    "type": "A",
+    "content": "asd",
+    "date": "2019-04-07T08:34:11.373Z",
+    "media": null,
+    "has_been_read": false
+  }
+},
+{
+  "model": "chatMe.message",
+  "pk": 154,
+  "fields": {
+    "sender": [
+      "alisafaya"
+    ],
+    "receiver": [
+      "user"
+    ],
+    "group": null,
+    "type": "S",
+    "content": "qwe",
+    "date": "2019-04-07T08:34:20.348Z",
+    "media": null,
+    "has_been_read": false
+  }
+},
+{
+  "model": "chatMe.message",
+  "pk": 155,
+  "fields": {
+    "sender": [
+      "hilal"
+    ],
+    "receiver": null,
+    "group": null,
+    "type": "A",
+    "content": "qwe",
+    "date": "2019-04-07T08:34:23.912Z",
+    "media": null,
+    "has_been_read": false
+  }
+},
+{
+  "model": "chatMe.message",
+  "pk": 156,
+  "fields": {
+    "sender": [
+      "hilal"
+    ],
+    "receiver": null,
+    "group": null,
+    "type": "A",
+    "content": "ewd",
+    "date": "2019-04-07T08:34:29.630Z",
+    "media": null,
+    "has_been_read": false
+  }
+},
+{
+  "model": "chatMe.message",
+  "pk": 157,
+  "fields": {
+    "sender": [
+      "hilal"
+    ],
+    "receiver": null,
+    "group": 1,
+    "type": "G",
+    "content": "asdqw",
+    "date": "2019-04-07T08:35:07.927Z",
+    "media": null,
+    "has_been_read": false
+  }
+},
+{
+  "model": "chatMe.message",
+  "pk": 158,
+  "fields": {
+    "sender": [
+      "hilal"
+    ],
+    "receiver": [
+      "alisafaya"
+    ],
+    "group": null,
+    "type": "S",
+    "content": "merhbaa",
+    "date": "2019-04-07T08:36:53.838Z",
+    "media": null,
+    "has_been_read": false
+  }
+},
+{
+  "model": "chatMe.message",
+  "pk": 159,
+  "fields": {
+    "sender": [
+      "alisafaya"
+    ],
+    "receiver": [
+      "hilal"
+    ],
+    "group": null,
+    "type": "S",
+    "content": "merhbaa",
+    "date": "2019-04-07T08:37:03.072Z",
+    "media": null,
+    "has_been_read": false
+  }
+},
+{
+  "model": "chatMe.message",
+  "pk": 160,
+  "fields": {
+    "sender": [
+      "hilal"
+    ],
+    "receiver": [
+      "alisafaya"
+    ],
+    "group": null,
+    "type": "S",
+    "content": "qwe",
+    "date": "2019-04-07T08:37:06.557Z",
+    "media": null,
+    "has_been_read": false
+  }
+},
+{
+  "model": "chatMe.message",
+  "pk": 161,
+  "fields": {
+    "sender": [
+      "hilal"
+    ],
+    "receiver": null,
+    "group": 1,
+    "type": "G",
+    "content": "qweef",
+    "date": "2019-04-07T08:37:12.886Z",
+    "media": null,
+    "has_been_read": false
+  }
+},
+{
+  "model": "chatMe.message",
+  "pk": 162,
+  "fields": {
+    "sender": [
+      "hilal"
+    ],
+    "receiver": null,
+    "group": null,
+    "type": "A",
+    "content": "asdqwe",
+    "date": "2019-04-07T08:37:22.958Z",
+    "media": null,
+    "has_been_read": false
+  }
+},
+{
+  "model": "chatMe.message",
+  "pk": 163,
+  "fields": {
+    "sender": [
+      "hilal"
+    ],
+    "receiver": null,
+    "group": 2,
+    "type": "G",
+    "content": "qwe",
+    "date": "2019-04-07T08:37:33.822Z",
+    "media": null,
+    "has_been_read": false
+  }
+},
+{
+  "model": "chatMe.message",
+  "pk": 164,
+  "fields": {
+    "sender": [
+      "hilal"
+    ],
+    "receiver": null,
+    "group": 1,
+    "type": "G",
+    "content": "fdsf",
+    "date": "2019-04-07T08:37:37.710Z",
+    "media": null,
+    "has_been_read": false
+  }
+},
+{
+  "model": "chatMe.message",
+  "pk": 165,
+  "fields": {
+    "sender": [
+      "hilal"
+    ],
+    "receiver": [
+      "ayse"
+    ],
+    "group": null,
+    "type": "S",
+    "content": "qwfwd",
+    "date": "2019-04-07T08:37:47.836Z",
+    "media": null,
+    "has_been_read": false
+  }
+},
+{
+  "model": "chatMe.message",
+  "pk": 166,
+  "fields": {
+    "sender": [
+      "alisafaya"
+    ],
+    "receiver": [
+      "hilal"
+    ],
+    "group": null,
+    "type": "S",
+    "content": "qweqw",
+    "date": "2019-04-07T08:38:39.033Z",
+    "media": null,
+    "has_been_read": false
+  }
+},
+{
+  "model": "chatMe.message",
+  "pk": 167,
+  "fields": {
+    "sender": [
+      "hilal"
+    ],
+    "receiver": [
+      "alisafaya"
+    ],
+    "group": null,
+    "type": "S",
+    "content": "asd",
+    "date": "2019-04-07T08:38:49.018Z",
+    "media": null,
+    "has_been_read": false
+  }
+},
+{
+  "model": "chatMe.message",
+  "pk": 168,
+  "fields": {
+    "sender": [
+      "alisafaya"
+    ],
+    "receiver": [
+      "ayse"
+    ],
+    "group": null,
+    "type": "S",
+    "content": "ert",
+    "date": "2019-04-07T08:40:26.632Z",
+    "media": null,
+    "has_been_read": false
+  }
+},
+{
+  "model": "chatMe.message",
+  "pk": 169,
+  "fields": {
+    "sender": [
+      "alisafaya"
+    ],
+    "receiver": [
+      "hilal"
+    ],
+    "group": null,
+    "type": "S",
+    "content": "qwe",
+    "date": "2019-04-07T08:41:48.467Z",
+    "media": null,
+    "has_been_read": false
+  }
+},
+{
+  "model": "chatMe.message",
+  "pk": 170,
+  "fields": {
+    "sender": [
+      "alisafaya"
+    ],
+    "receiver": [
+      "ayse"
+    ],
+    "group": null,
+    "type": "S",
+    "content": "merhaba",
+    "date": "2019-04-07T08:45:24.921Z",
+    "media": null,
+    "has_been_read": false
+  }
+},
+{
+  "model": "chatMe.message",
+  "pk": 171,
+  "fields": {
+    "sender": [
+      "ayse"
+    ],
+    "receiver": [
+      "hilal"
+    ],
+    "group": null,
+    "type": "S",
+    "content": "nasilsiniz",
+    "date": "2019-04-07T08:45:35.935Z",
+    "media": null,
+    "has_been_read": false
+  }
+},
+{
+  "model": "chatMe.message",
+  "pk": 172,
+  "fields": {
+    "sender": [
+      "hilal"
+    ],
+    "receiver": [
+      "alisafaya"
+    ],
+    "group": null,
+    "type": "S",
+    "content": "asdqw",
+    "date": "2019-04-07T08:47:16.622Z",
+    "media": null,
+    "has_been_read": false
+  }
+},
+{
+  "model": "chatMe.message",
+  "pk": 173,
+  "fields": {
+    "sender": [
+      "alisafaya"
+    ],
+    "receiver": null,
+    "group": null,
+    "type": "A",
+    "content": "aslkndklas",
+    "date": "2019-04-07T08:47:22.884Z",
+    "media": null,
+    "has_been_read": false
+  }
+},
+{
+  "model": "chatMe.message",
+  "pk": 174,
+  "fields": {
+    "sender": [
+      "ChatMe"
+    ],
+    "receiver": [
+      "alaa"
+    ],
+    "group": null,
+    "type": "A",
+    "content": "Ho\u015f geldiniz, buras\u0131 herkesin ula\u015fabilece\u011fi bir mesajla\u015fma alan\u0131d\u0131r. L\u00fctfen duyarl\u0131 kullan\u0131n\u0131z.",
+    "date": "2019-04-07T09:51:30.879Z",
+    "media": null,
+    "has_been_read": false
+  }
+},
+{
+  "model": "chatMe.message",
+  "pk": 175,
+  "fields": {
+    "sender": [
+      "alisafaya"
+    ],
+    "receiver": [
+      "alaa"
+    ],
+    "group": null,
+    "type": "S",
+    "content": "merhaba alaa",
+    "date": "2019-04-07T09:51:50.001Z",
+    "media": null,
+    "has_been_read": false
+  }
+},
+{
+  "model": "chatMe.message",
+  "pk": 176,
+  "fields": {
+    "sender": [
+      "alaa"
+    ],
+    "receiver": [
+      "alisafaya"
+    ],
+    "group": null,
+    "type": "S",
+    "content": "merhaba ali",
+    "date": "2019-04-07T09:52:01.780Z",
+    "media": null,
+    "has_been_read": false
+  }
+},
+{
+  "model": "chatMe.message",
+  "pk": 177,
+  "fields": {
+    "sender": [
+      "alisafaya"
+    ],
+    "receiver": [
+      "alaa"
+    ],
+    "group": null,
+    "type": "S",
+    "content": "nasilsiniz",
+    "date": "2019-04-07T09:52:06.603Z",
+    "media": null,
+    "has_been_read": false
+  }
+},
+{
+  "model": "chatMe.message",
+  "pk": 178,
+  "fields": {
+    "sender": [
+      "alaa"
+    ],
+    "receiver": [
+      "alisafaya"
+    ],
+    "group": null,
+    "type": "S",
+    "content": "iyiyiz",
+    "date": "2019-04-07T09:52:10.578Z",
+    "media": null,
+    "has_been_read": false
+  }
+},
+{
+  "model": "chatMe.message",
+  "pk": 179,
+  "fields": {
+    "sender": [
+      "ayse"
+    ],
+    "receiver": [
+      "alaa"
+    ],
+    "group": null,
+    "type": "S",
+    "content": "merhaba alaa ben ayseyim",
+    "date": "2019-04-07T09:52:35.336Z",
+    "media": null,
+    "has_been_read": false
+  }
+},
+{
+  "model": "chatMe.message",
+  "pk": 180,
+  "fields": {
+    "sender": [
+      "hilal"
+    ],
+    "receiver": null,
+    "group": 1,
+    "type": "G",
+    "content": "merhaba",
+    "date": "2019-04-07T19:25:27.956Z",
+    "media": null,
+    "has_been_read": false
+  }
+},
+{
+  "model": "chatMe.message",
+  "pk": 181,
+  "fields": {
+    "sender": [
+      "alisafaya"
+    ],
+    "receiver": null,
+    "group": 1,
+    "type": "G",
+    "content": "merhsb",
+    "date": "2019-04-07T19:26:28.738Z",
+    "media": null,
+    "has_been_read": false
+  }
+},
+{
+  "model": "chatMe.message",
+  "pk": 182,
+  "fields": {
+    "sender": [
+      "alisafaya"
+    ],
+    "receiver": null,
+    "group": 1,
+    "type": "G",
+    "content": "laksjd",
+    "date": "2019-04-07T19:26:31.167Z",
+    "media": null,
+    "has_been_read": false
+  }
+},
+{
+  "model": "chatMe.message",
+  "pk": 183,
+  "fields": {
+    "sender": [
+      "hilal"
+    ],
+    "receiver": null,
+    "group": 1,
+    "type": "G",
+    "content": "askljd",
+    "date": "2019-04-07T19:26:33.590Z",
+    "media": null,
+    "has_been_read": false
+  }
+},
+{
+  "model": "chatMe.message",
+  "pk": 184,
+  "fields": {
+    "sender": [
+      "hilal"
+    ],
+    "receiver": [
+      "alisafaya"
+    ],
+    "group": null,
+    "type": "S",
+    "content": "mesaj",
+    "date": "2019-04-07T19:27:02.615Z",
+    "media": null,
+    "has_been_read": false
+  }
+}
+]
